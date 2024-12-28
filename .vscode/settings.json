@@ -1,0 +1,11 @@
+{
+    "makefile.makefilePath": "C:\\Users\\monda\\Documents\\GitHub\\data-engineer-handbook\\bootcamp\\materials\\1-dimensional-data-modeling\\Makefile",
+    "pgsql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ]
+}
