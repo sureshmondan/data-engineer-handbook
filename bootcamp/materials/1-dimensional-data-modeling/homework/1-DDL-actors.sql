@@ -1,18 +1,23 @@
+-- Create a type films with the requested fields
+
 drop type films cascade;
 
 create type films as(
     filmid text,
     film text,
-    year integer,
     votes integer,
     rating REAl
 )
 ;
 
+-- Create a eNum type quality_class with the possible values
+
 drop type quality_class cascade;
 
 create type quality_class as enum ('star', 'good', 'average', 'bad')
 ;
+
+-- Create the table actors with the requested fields
 
 drop table actors;
 
@@ -23,12 +28,6 @@ create table actors (
     quality_class quality_class,
     is_active BOOLEAN,
     current_year integer,
-    primary key (actorid)
+    primary key (actorid,current_year)
 )
 ;
-
-drop table actors_history_scd;
-
-create table actors_history_scd (
-    
-)
